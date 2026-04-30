@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x /Users/juanmex/Code/ballestlane/backend/bin/docker-entrypoint /Users/juanmex/Code/ballestlane/backend/bin/rails /Users/juanmex/Code/ballestlane/backend/bin/rake /Users/juanmex/Code/ballestlane/backend/bin/setup)"
+    ]
+  }
+}

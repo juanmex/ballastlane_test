@@ -1,0 +1,60 @@
+books = [
+  { title: "Don Quixote",                         author: "Miguel de Cervantes",    genre: "Novel",           isbn: "978-0-06-093434-8",  total_copies: 12 },
+  { title: "A Tale of Two Cities",                author: "Charles Dickens",        genre: "Historical",      isbn: "978-0-14-143960-0",  total_copies: 9  },
+  { title: "The Lord of the Rings",               author: "J.R.R. Tolkien",         genre: "Fantasy",         isbn: "978-0-618-64015-7",  total_copies: 15 },
+  { title: "The Little Prince",                   author: "Antoine de St-Exupéry",  genre: "Fable",           isbn: "978-0-15-601219-5",  total_copies: 11 },
+  { title: "Harry Potter and the Philosopher's Stone", author: "J.K. Rowling",      genre: "Fantasy",         isbn: "978-0-7475-3269-9",  total_copies: 20 },
+  { title: "And Then There Were None",            author: "Agatha Christie",        genre: "Mystery",         isbn: "978-0-06-207349-1",  total_copies: 8  },
+  { title: "Dream of the Red Chamber",            author: "Cao Xueqin",             genre: "Novel",           isbn: "978-0-14-054537-6",  total_copies: 5  },
+  { title: "The Hobbit",                          author: "J.R.R. Tolkien",         genre: "Fantasy",         isbn: "978-0-618-00221-3",  total_copies: 14 },
+  { title: "She: A History of Adventure",        author: "H. Rider Haggard",       genre: "Adventure",       isbn: "978-0-19-954274-6",  total_copies: 4  },
+  { title: "The Da Vinci Code",                   author: "Dan Brown",              genre: "Thriller",        isbn: "978-0-385-50420-5",  total_copies: 10 },
+  { title: "1984",                                author: "George Orwell",          genre: "Dystopian",       isbn: "978-0-451-52493-5",  total_copies: 17 },
+  { title: "Brave New World",                     author: "Aldous Huxley",          genre: "Dystopian",       isbn: "978-0-06-085052-4",  total_copies: 9  },
+  { title: "Animal Farm",                         author: "George Orwell",          genre: "Satire",          isbn: "978-0-452-28424-1",  total_copies: 13 },
+  { title: "The Catcher in the Rye",              author: "J.D. Salinger",          genre: "Literary",        isbn: "978-0-316-76948-0",  total_copies: 8  },
+  { title: "To Kill a Mockingbird",               author: "Harper Lee",             genre: "Literary",        isbn: "978-0-06-112008-4",  total_copies: 16 },
+  { title: "Pride and Prejudice",                 author: "Jane Austen",            genre: "Romance",         isbn: "978-0-14-143951-8",  total_copies: 11 },
+  { title: "The Great Gatsby",                    author: "F. Scott Fitzgerald",    genre: "Literary",        isbn: "978-0-7432-7356-5",  total_copies: 10 },
+  { title: "Moby-Dick",                           author: "Herman Melville",        genre: "Adventure",       isbn: "978-0-14-243723-9",  total_copies: 6  },
+  { title: "War and Peace",                       author: "Leo Tolstoy",            genre: "Historical",      isbn: "978-0-14-044793-4",  total_copies: 7  },
+  { title: "Crime and Punishment",                author: "Fyodor Dostoevsky",      genre: "Psychological",   isbn: "978-0-14-305814-3",  total_copies: 8  },
+  { title: "The Brothers Karamazov",              author: "Fyodor Dostoevsky",      genre: "Philosophical",   isbn: "978-0-374-52837-7",  total_copies: 6  },
+  { title: "Anna Karenina",                       author: "Leo Tolstoy",            genre: "Literary",        isbn: "978-0-14-044913-6",  total_copies: 7  },
+  { title: "Ulysses",                             author: "James Joyce",            genre: "Modernist",       isbn: "978-0-679-72020-1",  total_copies: 4  },
+  { title: "One Hundred Years of Solitude",       author: "Gabriel García Márquez", genre: "Magical Realism", isbn: "978-0-06-088328-7",  total_copies: 12 },
+  { title: "The Alchemist",                       author: "Paulo Coelho",           genre: "Fiction",         isbn: "978-0-06-231609-7",  total_copies: 18 },
+  { title: "In Search of Lost Time",              author: "Marcel Proust",          genre: "Modernist",       isbn: "978-0-14-024895-4",  total_copies: 3  },
+  { title: "Hamlet",                              author: "William Shakespeare",    genre: "Drama",           isbn: "978-0-7432-7712-9",  total_copies: 10 },
+  { title: "Macbeth",                             author: "William Shakespeare",    genre: "Drama",           isbn: "978-0-7432-7710-5",  total_copies: 9  },
+  { title: "The Divine Comedy",                   author: "Dante Alighieri",        genre: "Epic Poetry",     isbn: "978-0-14-244895-8",  total_copies: 5  },
+  { title: "The Odyssey",                         author: "Homer",                  genre: "Epic Poetry",     isbn: "978-0-14-026886-7",  total_copies: 8  },
+  { title: "The Iliad",                           author: "Homer",                  genre: "Epic Poetry",     isbn: "978-0-14-044592-3",  total_copies: 7  },
+  { title: "Frankenstein",                        author: "Mary Shelley",           genre: "Gothic",          isbn: "978-0-14-143947-1",  total_copies: 9  },
+  { title: "Dracula",                             author: "Bram Stoker",            genre: "Gothic",          isbn: "978-0-14-143984-6",  total_copies: 8  },
+  { title: "Jane Eyre",                           author: "Charlotte Brontë",       genre: "Romance",         isbn: "978-0-14-144114-6",  total_copies: 10 },
+  { title: "Wuthering Heights",                   author: "Emily Brontë",           genre: "Gothic Romance",  isbn: "978-0-14-143955-6",  total_copies: 9  },
+  { title: "The Picture of Dorian Gray",          author: "Oscar Wilde",            genre: "Gothic",          isbn: "978-0-14-143957-0",  total_copies: 8  },
+  { title: "Great Expectations",                  author: "Charles Dickens",        genre: "Literary",        isbn: "978-0-14-143956-3",  total_copies: 10 },
+  { title: "Adventures of Huckleberry Finn",      author: "Mark Twain",             genre: "Adventure",       isbn: "978-0-14-243723-0",  total_copies: 11 },
+  { title: "The Count of Monte Cristo",           author: "Alexandre Dumas",        genre: "Adventure",       isbn: "978-0-14-044615-9",  total_copies: 9  },
+  { title: "Les Misérables",                      author: "Victor Hugo",            genre: "Historical",      isbn: "978-0-14-044430-8",  total_copies: 8  },
+  { title: "The Three Musketeers",                author: "Alexandre Dumas",        genre: "Adventure",       isbn: "978-0-14-044578-7",  total_copies: 7  },
+  { title: "Catch-22",                            author: "Joseph Heller",          genre: "Satire",          isbn: "978-1-4516-1117-5",  total_copies: 8  },
+  { title: "Slaughterhouse-Five",                 author: "Kurt Vonnegut",          genre: "Science Fiction", isbn: "978-0-385-33348-1",  total_copies: 7  },
+  { title: "The Grapes of Wrath",                 author: "John Steinbeck",         genre: "Literary",        isbn: "978-0-14-303943-3",  total_copies: 9  },
+  { title: "Of Mice and Men",                     author: "John Steinbeck",         genre: "Literary",        isbn: "978-0-14-028739-4",  total_copies: 12 },
+  { title: "East of Eden",                        author: "John Steinbeck",         genre: "Literary",        isbn: "978-0-14-028738-7",  total_copies: 8  },
+  { title: "The Old Man and the Sea",             author: "Ernest Hemingway",       genre: "Literary",        isbn: "978-0-684-80122-3",  total_copies: 10 },
+  { title: "Fahrenheit 451",                      author: "Ray Bradbury",           genre: "Dystopian",       isbn: "978-1-4516-7331-9",  total_copies: 13 },
+  { title: "The Stranger",                        author: "Albert Camus",           genre: "Philosophical",   isbn: "978-0-679-72020-0",  total_copies: 9  },
+  { title: "Invisible Man",                       author: "Ralph Ellison",          genre: "Literary",        isbn: "978-0-679-72313-4",  total_copies: 7  }
+]
+
+books.each do |attrs|
+  Book.find_or_create_by(isbn: attrs[:isbn]) do |book|
+    book.assign_attributes(attrs)
+  end
+end
+
+puts "Seeded #{Book.count} books."
