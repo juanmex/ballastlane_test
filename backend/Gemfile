@@ -11,8 +11,9 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
-  
+  gem "rubocop-rails"
 end
 
+gem "bcrypt",  "~> 3.1"
 gem "pundit", "~> 2.5"
-gem "pagy", "~> 43.5"
+gem "pagy",   "~> 43.5"

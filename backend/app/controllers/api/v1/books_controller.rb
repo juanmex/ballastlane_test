@@ -1,8 +1,17 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     class BooksController < ApplicationController
+      BOOK_PARTIAL_MATCH = %i[title author].freeze
+
       def index
-        render_paginated(Book.all)
+        scope = RecordFilterService.new(
+          scope: Book.all,
+          filters: params.permit(:title, :author, :genre, :isbn).to_h,
+          partial_match_attributes: BOOK_PARTIAL_MATCH
+        ).call
+        render_paginated(scope)
       end
 
       def show
